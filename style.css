@@ -1,0 +1,172 @@
+/* Estilo geral para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    padding: 20px;
+}
+
+.container {
+    background-color: antiquewhite;
+    padding: 30px; /*Coloca o texto com bordas dessa área branca. */
+    border-radius: 8px;
+    max-width: 800px; /*Especificado o tamanho. 
+                        Independentemente do tamanho do monitor, 
+                        o texto nunca passará de 800 pixels de largura. */
+    margin: auto; /* Pega o bloco de 800px e o coloca para o centro exato da tela*/
+}
+
+/* COLOR: Define a cor do texto */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* TEXT-ALIGN: Define o alinhamento horizontal */
+.alinhar-esquerda {
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.alinhar-centro {
+    text-align: center; /* Alinhamento centralizado */
+}
+
+.alinhar-direita {
+    text-align: right; /* Alinhamento à direita */
+}
+
+/* TEXT-DECORATION: Adiciona linhas decorativas */
+.sublinhado {
+    text-decoration: underline; /* Coloca uma linha abaixo do texto */
+}
+
+.riscado {
+    text-decoration: line-through; /* Coloca uma linha cortando o texto */
+}
+
+/* TEXT-TRANSFORM: Altera a capitalização das letras */
+.caixa-alta {
+    /* uppercase transforma tudo em CAIXA ALTA */
+    text-transform: uppercase; 
+}
+
+/* TEXT-INDENT: Define o recuo da primeira linha de um parágrafo */
+.paragrafo-recuo {
+    /* Aplica um recuo de 2cm no início do texto */
+    text-indent: 2cm; 
+    text-align: justify; /* Justifica o texto para as laterais ficarem retas */
+}
+
+/* FONT-FAMILY: Define o tipo da letra */
+.fonte-arial {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte limpa e moderna */
+}
+
+.fonte-times {
+    /* Usamos aspas quando o nome da fonte tem espaços */
+    font-family: "Times New Roman", Times, serif; 
+}
+
+/* FONT-SIZE: Define o tamanho da letra */
+.tamanho-pequeno {
+    font-size: small; /* Tamanho relativo pré-definido pelo navegador */
+}
+
+.tamanho-grande {
+    font-size: 50px; /* Tamanho fixo em pixels (ideal para títulos de impacto) */
+}
+
+/* FONT-STYLE: Define a inclinação da letra */
+.estilo-obliquo {
+    /* 'oblique' inclina a fonte original, diferente do 'italic' que usa uma versão desenhada */
+    font-style: oblique; 
+}
+
+/* PROPRIEDADE SHORTHAND (Tudo em um) */
+.estilo-misto {
+    /* Ordem recomendada: estilo | tamanho | família */
+    font: oblique 25px "Times New Roman";
+    
+    /* Outras propriedades para destacar o bloco */
+    color: #e67e22;
+    border-left: 5px solid #e67e22;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+/* --- ESTILIZAÇÃO ESPECÍFICA PARA TÍTULOS --- */
+
+/* Estilizando o H1 com uma borda inferior e transformando em caixa alta */
+.titulo-principal {
+    color: #2980b9;
+    font-size: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    /* Adiciona uma linha sólida azul embaixo do título */
+    border-bottom: 3px solid #2980b9; 
+    padding-bottom: 5px;
+}
+
+/* Usando sombra (text-shadow) para dar destaque ao H2 */
+.titulo-sombra {
+    color: #2c3e50;
+    /* text-shadow: deslocamento-x | deslocamento-y | desfoque | cor */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+}
+
+/* Usando espaçamento entre letras (letter-spacing) no H3 */
+.titulo-espacado {
+    color: #7f8c8d;
+    /* letter-spacing aumenta a distância entre cada letra do título */
+    letter-spacing: 8px;
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+/* --- ESTILIZAÇÃO DE TABELAS E BORDAS --- */
+
+/* Configurações da Tabela Pai */
+.tabela-estilizada {
+    width: 100%;               /* Faz a tabela ocupar toda a largura do container */
+    
+    /* BORDER-COLLAPSE: Faz com que as bordas das células se unam em uma só. 
+       Sem isso, cada célula teria sua própria borda separada (aparência de grade antiga). */
+    border-collapse: collapse; 
+    
+    margin-top: 20px;
+}
+
+/* Estilizando as células de cabeçalho (th) e de dados (td) */
+.tabela-estilizada th, 
+.tabela-estilizada td {
+    /* BORDER-STYLE: Define o estilo da linha (solid, dashed, dotted, double) */
+    border-style: dashed;
+    
+    /* BORDER-WIDTH: Define o quão grossa é a linha */
+    border-width: 2px;
+    
+    /* BORDER-COLOR: Define a cor da linha da borda */
+    border-color: #34495e;
+    
+    padding: 12px;             /* Espaço interno para o texto não sufocar */
+}
+
+/* Aplicando TEXT-ALIGN dentro da tabela */
+.tabela-estilizada th {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;        /* Centraliza o texto do cabeçalho */
+    text-transform: uppercase;
+}
+
+.tabela-estilizada td {
+    /* Alinha o texto das células à esquerda */
+    text-align: left; 
+}
+
+/* Exemplo de alinhamento específico para a última coluna */
+.tabela-estilizada td:last-child {
+    text-align: right;         /* Alinha a última coluna à direita */
+    font-weight: bold;
+}
